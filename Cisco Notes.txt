@@ -1,0 +1,20 @@
+Switch Configurations
+
+show running
+
+#Will tell you the switch configuration
+
+
+Copy running-config tftp 
+
+#after editing the config in notepad++ you can copy the switch configuration file into the switch by using a tftp software like PumpKIN. 
+#Make sure to use the right file destination to draw from
+#
+
+Copy Running-config start
+#You need to use this after making changes to running config to make sure startup-config copies your changes
+#
+
+
+ntp server 0.0.0.0 prefer
+#Adds the preferred NTP server, make sure to include the proper DNS to your server, whether it is the netclock or the firewall. 
